@@ -2,15 +2,15 @@
 
 ## Project info
 
-**URL**: https://preview-fac8eeea--pitch-perfect-cv.lovable.app/
+**URL**: https://lovable.dev/projects/d1202384-9700-4b67-a150-2126cc7666af
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
 **Use Lovable**
-https://preview-fac8eeea--pitch-perfect-cv.lovable.app/
-Simply visit the 
+
+Simply visit the [Lovable Project](https://lovable.dev/projects/d1202384-9700-4b67-a150-2126cc7666af) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
