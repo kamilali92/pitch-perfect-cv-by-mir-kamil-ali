@@ -10,13 +10,12 @@ import AIAssistant from "@/components/AIAssistant";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell, BorderStyle, WidthType, AlignmentType } from "docx";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "@/hooks/use-toast";
 
 const Index = () => {
   const [resumeData, setResumeData] = useState(defaultResumeData);
   const [showAIAssistant, setShowAIAssistant] = useState(false);
   const resumeRef = useRef<HTMLDivElement>(null);
-  const { toast } = useToast();
 
   const exportPDF = async () => {
     if (!resumeRef.current) return;
@@ -298,7 +297,7 @@ const Index = () => {
       console.error("Error exporting DOCX:", error);
       toast({
         title: "Export Failed",
-        description: "There was an error exporting your resume to DOCX.",
+        description: "There was an error exporting your resume to PDF.",
         variant: "destructive",
       });
     }

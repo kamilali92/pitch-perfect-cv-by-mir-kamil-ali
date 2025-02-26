@@ -37,6 +37,10 @@ const AIAssistant = ({ resumeData, setResumeData }: AIAssistantProps) => {
             aboutMe:
               "I am a dedicated, organized High School Student with excellent time management skills, seeking part-time and future full-time opportunities. With valuable customer service experience gained at my family's cafe, I've developed strong interpersonal skills and a passion for client satisfaction. I quickly adapt to new environments, enjoy acquiring new skills, and consistently demonstrate reliability and punctuality. I'm eager to contribute my enthusiasm and work ethic to your organization.",
           });
+          toast({
+            title: "About Me Enhanced",
+            description: "Your 'About Me' section has been professionally enhanced.",
+          });
           break;
         case "skills":
           const enhancedSkills = [
@@ -48,6 +52,10 @@ const AIAssistant = ({ resumeData, setResumeData }: AIAssistantProps) => {
           setResumeData({
             ...resumeData,
             skills: enhancedSkills,
+          });
+          toast({
+            title: "Skills Enhanced",
+            description: "Relevant skills have been added to your resume.",
           });
           break;
         case "experience":
@@ -72,6 +80,10 @@ const AIAssistant = ({ resumeData, setResumeData }: AIAssistantProps) => {
             ...resumeData,
             experience: enhancedExperience,
           });
+          toast({
+            title: "Experience Enhanced",
+            description: "Your work experience descriptions have been professionally improved.",
+          });
           break;
         default:
           // Process custom prompt
@@ -83,11 +95,6 @@ const AIAssistant = ({ resumeData, setResumeData }: AIAssistantProps) => {
       }
       
       setIsLoading(false);
-      
-      toast({
-        title: "AI Enhancement Complete",
-        description: "Your resume has been improved with AI suggestions.",
-      });
     }, 1500);
   };
 
