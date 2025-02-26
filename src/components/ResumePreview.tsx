@@ -75,6 +75,7 @@ const ResumePreview = ({ resumeData }: ResumePreviewProps) => {
                   src={personalInfo.profileImage}
                   alt={personalInfo.name}
                   className="w-full h-full object-cover"
+                  crossOrigin="anonymous"
                 />
               </div>
             </div>
