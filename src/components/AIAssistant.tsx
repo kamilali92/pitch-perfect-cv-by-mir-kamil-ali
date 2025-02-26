@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { ResumeData } from "@/data/defaultResumeData";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "@/hooks/use-toast";
 
 interface AIAssistantProps {
   resumeData: ResumeData;
@@ -16,7 +16,6 @@ const AIAssistant = ({ resumeData, setResumeData }: AIAssistantProps) => {
   const [prompt, setPrompt] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [activeTab, setActiveTab] = useState("enhance");
-  const { toast } = useToast();
 
   const enhancementPrompts = [
     "Make my work experience sound more professional",
