@@ -9,8 +9,8 @@
 There are several ways of editing your application.
 
 **Use Lovable**
-
-Simply visit the [Lovable Project]([https://lovable.dev/projects/d1202384-9700-4b67-a150-2126cc7666af](https://preview-04211f4a--pitch-perfect-cv.lovable.app/)) and start prompting.
+https://preview-fac8eeea--pitch-perfect-cv.lovable.app/
+Simply visit the 
 
 Changes made via Lovable will be committed automatically to this repo.
 
