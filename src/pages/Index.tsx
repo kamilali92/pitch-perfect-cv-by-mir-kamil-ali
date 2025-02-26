@@ -297,7 +297,7 @@ const Index = () => {
       console.error("Error exporting DOCX:", error);
       toast({
         title: "Export Failed",
-        description: "There was an error exporting your resume to DOCX.",
+        description: "There was an error exporting your resume to PDF.",
         variant: "destructive",
       });
     }
